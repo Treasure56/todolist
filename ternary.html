@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // CONDITIONALS: Tertary operation
+    // it is seen as short hand for if else statement;
+
+    // synthax
+    // condition ? iftrue : ifFalse;  eg
+
+    // let rice = "fried rice";
+    // let response = rice ? "yes, we have rice." : " sorry, no rice today.";
+    // let iscustomerBanned = false;
+
+    // // you can turn ternary operation together
+    // let foodAccess = iscustomerBanned ? "sorry no  food for you !"
+    //  : rice
+    //  ? `yes we have ${rice} today.`
+    //  : "sorry, no rice today.";
+
+    // console.log(foodAccess);
+
+    // let testScore = 100;
+    // let myGrade = testScore > 89 ? "A"
+    // : testScore > 79 ? "B"
+    // : testScore > 69 ? "C"
+    // : testScore > 59 ? "D"
+    // : testScore > 49 ? "E"
+    // : "F";
+    // console.log(`Your test grade is ${myGrade}.`);
+
+    let playerOne = "rock";
+    let computer = "scissors";
+    let result =
+      playerOne === computer
+        ? "tie game !"
+        : playerOne === "rock" && computer === "scissors"
+        ? "computer win !"
+        : playerOne === "scissors" && computer === "rock"
+        ? "computer win !"
+        : "playerOne wins !";
+    console.log(result);
+  </script>
+</html>

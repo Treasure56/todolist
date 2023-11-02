@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // javascript classes
+
+class pizza {
+    constructor(pizzaType, pizzaSize){
+        this.type = pizzaType;
+        this.size = pizzaSize;
+        this.crust = "original"
+    }
+
+    bake(){
+        console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza`);
+    }
+}
+
+const mypizza = new pizza("pepperoni", "small");
+mypizza.bake();
+
+// factory function 
+// a factory function is another way t creat object in javascript
+
+function pzzaFactory(pizzaSize){
+    const crust = "original";
+    const size = pizzaSize;
+    return{
+        bake: () => console.log(`baking a ${size} ${crust} crust pizza`)
+}
+}
+
+const myPizza = pizzaFactory("small");
+
+
+    </script>
+</body>
+</html>

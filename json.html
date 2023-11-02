@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const myObj = {
+            name: "Dave",
+            hobbies:["eat", "sleep", "code"],
+            hello: function () {
+                console.log("Hello!");
+            }
+
+        }
+
+        console.log(myObj);
+        console.log(myObj.name)
+        myObj.hello();
+        console.log(typeof myObj);
+
+        const sendJeson = JSON.stringify(myObj);
+        console.log(sendJeson);
+        console.log(typeof sendJeson);
+        console.log(sendJeson.name);
+
+        const reciveJSON = JSON.parse(sendJeson);
+        console.log(reciveJSON);
+        console.log(typeof reciveJSON);
+    </script>
+    
+</body>
+</html>

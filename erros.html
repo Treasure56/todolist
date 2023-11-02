@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Javascript Errors and error Handling
+
+        "user strict";
+      const makeErro = () => {
+        try{
+            throw new customError("This is a custom error")
+        } catch(err){
+           console.error(err.message);
+           console.error(err.name);
+           console.error(err.stack);
+        }
+      }
+      makeErro();
+
+
+      function custumError(messages){
+        this.messages = message;
+        this.name = "customError";
+        this.stack = `${this.name}: ${this.messages}`;
+      }
+    </script>
+    
+</body>
+</html>
